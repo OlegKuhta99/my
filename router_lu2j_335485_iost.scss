@@ -1,0 +1,12 @@
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+
+const getUniqueValues = array => [...new Set(array)];
+false - kiwi
+console.log(getRandomString());
+
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+
+const greet = name => `Hello, ${name}!`;
