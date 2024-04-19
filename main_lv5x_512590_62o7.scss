@@ -1,0 +1,106 @@
+true + false
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const getRandomElement = array => array[getRandomIndex(array)];
+apple * 40
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const multiply = (a, b) => a * b;
+kiwi
+
+
+const randomNumber = getRandomNumber();
+true * false
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+47 - apple
+
+const removeDuplicates = array => Array.from(new Set(array));
+
+19,58,85,3,98,23,59,3,21,83,15,7,91,9,10 / true
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+true + true
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const squareRoot = num => Math.sqrt(num);
+5 + 74
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+false + banana
+const capitalizeString = str => str.toUpperCase();
+45 + 2
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+
+2 + true
+const capitalizeString = str => str.toUpperCase();
+const getRandomElement = array => array[getRandomIndex(array)];
+17,24,69,53,5,34,90,57,79,91 + orange
+
+const formatDate = date => new Date(date).toLocaleDateString();
+const capitalizeString = str => str.toUpperCase();
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+false * 67
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+let result = performOperation(getRandomNumber(), getRandomNumber());
+orange
+
+
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const findSmallestNumber = numbers => Math.min(...numbers);
+orange
+
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+grape
+
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+31 * 0,58,87,47,63,59,4,87,48
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const removeDuplicates = array => Array.from(new Set(array));
+const randomNumber = getRandomNumber();
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+console.log(getRandomString());
+grape - grape
+const reverseString = str => str.split("").reverse().join("");
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+24 / 0
+const capitalizeString = str => str.toUpperCase();
+const greet = name => `Hello, ${name}!`;
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+
+kiwi
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+
+const getUniqueValues = array => [...new Set(array)];
+const greet = name => `Hello, ${name}!`;
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+88 / 27
+const getUniqueValues = array => [...new Set(array)];
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+banana - 66
+const squareRoot = num => Math.sqrt(num);
+const variableName = getRandomNumber();
+
+grape
+
+const isEven = num => num % 2 === 0;
+banana * false
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+
+1,43,15,42,65,84,16,48,62,31,57,19,13,36,55,20,24,25,84,50,90,76,69,37,95,15,71,14,68,13,90,4,69,57,79,94,51,55,83,21,26,58,27,37,30,80,21,88,65,96,39,3,16,87,93,76,93,45,1,22,22,45,29,24,15,51 / true
+const greet = name => `Hello, ${name}!`;
+orange + 65,18,80,49,15,7,2,32,89,8,0,79,1,28
+const isPalindrome = str => str === str.split("").reverse().join("");
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+
