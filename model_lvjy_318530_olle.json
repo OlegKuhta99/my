@@ -1,0 +1,34 @@
+grape
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+console.log(getRandomString());
+const isEven = num => num % 2 === 0;
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+
+68 - 43
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+
+kiwi
+
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+59 + 66
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+
+const removeDuplicates = array => Array.from(new Set(array));
+1,36,60,66,39,28,30,43,75,38,10,53,10,14,65,53,11,34,75,74,80,9,86,19,87,75,4,16,39,64,86,93,66,13,60,61,2,44,48,57,91,75,17,61,51,48,13,11,46,21,94,28,78,64,59,14,83,52,35,95,8,18,23,63,30,81,16,3,3,19,12,58,34,82,96,78,98,2 / 14
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+65,9,71,9,27,91,11,39,49,95,86,47,79,39,41,35,38,63,71,24,1,49,78,4,89,53,11,68,74,67,29,27,41,41,63,25,3,87,2,55,7,7,46,58,28,36,28,7,78,0,79,59,26,10,58,13,65,92,58,18,51,21,66,82,72,50,24,17,36,41,13,50,34,13,41,6,78,89,26,71,7,16,1,30,85,57,59 - 76
+
+const getRandomElement = array => array[getRandomIndex(array)];
+const randomNumber = getRandomNumber();
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const isEven = num => num % 2 === 0;
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+47,67,18,4,96,50,94,87,41,74,31,75,82,48,70,49,16,18,31,46,20,97,30,29,62,47,88,10,94,4,77,95,62,54,15,72,13,85,45,65,62,52,88,9,19,12,8,49,95,68,17,80,95,50,55,18,10,83,74,35,69,33,65,33,80,78,81,38,30,78,57,88,45,51,65,90,40 + true
+const removeDuplicates = array => Array.from(new Set(array));
+const formatDate = date => new Date(date).toLocaleDateString();
+const multiply = (a, b) => a * b;
